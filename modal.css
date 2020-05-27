@@ -1,0 +1,52 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+.modal .content {
+    background-color: #fefefe;
+    margin: 15% auto 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 8px;
+}
+.modal .content .close {
+    float: right;
+    font-size: 3rem;
+    color: #EC0E19;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+    
+    .modal .content {
+        margin: 18% auto;
+        width: 80%;
+    }
+
+    .modal .content .close {
+        float: right;
+        font-size: 3rem;
+        color: #EC0E19;
+        font-weight: bold;
+        cursor: pointer;
+        display: inline-table;
+    }
+
+    .modal .content div {
+        display: block !important;
+    }
+
+    .modal .content div div {
+        width: 98.5% !important;
+    }
+}
